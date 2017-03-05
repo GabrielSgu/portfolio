@@ -1,0 +1,81 @@
+
+$strong-yellow: #ffe856;
+$big-dog-font: "Lucida Console",Monospace;
+
+html{
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $strong-yellow;
+  margin: 0;
+}
+
+.container{
+
+  display: flex;
+
+  &#main-container{
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  }
+
+  &#who-highlight{
+    flex-flow: row wrap;
+    justify-content: center;
+    height: 300px;
+    background-color: black;
+
+    h1{
+      font: bold 128px $big-dog-font;
+      color: $strong-yellow;
+      margin: 20px 0 0 0;
+
+    }
+
+    h2{
+      font: italic 18px $big-dog-font;
+      align-self: flex-center;
+      color: #d2d0d0;
+      margin: 20px 0 0 0;
+    }
+
+  }
+
+  &#portfolio{
+    flex-flow: row wrap;
+    justify-content: center;
+
+    h1{
+      font: bold 64px $big-dog-font;
+      color: #dabe0d;
+      margin: 40px 0 20px 0;
+    }
+
+  }
+
+  &#portfolio-thumbnail-group{
+    align-self: flex-start;
+    flex-flow: row wrap;
+    padding: 20px;
+  }
+}
+
+
+//#GENERAL USE
+
+  .portfolio-thumbnail{
+
+  }
+
+
+.round-image{
+  border-radius: 50%;
+  margin: 20px 10px 0 10px;
+  align-self: flex-start;
+}
