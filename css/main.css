@@ -6,36 +6,57 @@ body {
   background-color: #ffe856;
   margin: 0; }
 
-.container {
+.container-custom {
   display: flex; }
-  .container#main-container {
+  .container-custom#main-container {
     flex-flow: column nowrap;
     width: 60%;
     margin: 0 20% 0 20%;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
-  .container#who-highlight {
+  .container-custom#who-highlight {
     flex-flow: row wrap;
     justify-content: center;
     height: 300px;
     background-color: black; }
-    .container#who-highlight h1 {
+    .container-custom#who-highlight h1 {
       font: bold 128px "Lucida Console", Monospace;
       color: #ffe856;
       margin: 20px 0 0 0; }
-    .container#who-highlight h2 {
+    .container-custom#who-highlight h2 {
       font: italic 18px "Lucida Console", Monospace;
       align-self: flex-center;
       color: #d2d0d0;
       margin: 20px 0 0 0; }
-  .container#portfolio {
+  .container-custom#portfolio {
     flex-flow: row wrap;
     justify-content: center; }
-    .container#portfolio h1 {
+    .container-custom#portfolio h1 {
       font: bold 64px "Lucida Console", Monospace;
       color: #dabe0d;
       margin: 40px 0 20px 0; }
-  .container#portfolio-thumbnail-group {
+  .container-custom#contact-me {
+    flex-flow: column nowrap;
+    align-content: center;
+    padding: 0px 20px 0 20px; }
+    .container-custom#contact-me h1 {
+      text-align: center;
+      font: bold 64px "Lucida Console", Monospace;
+      color: #dabe0d;
+      margin: 40px 0 20px 0; }
+  .container-custom#input-fields {
+    flex-flow: row wrap;
+    padding: 0px 40px 0 40px; }
+    .container-custom#input-fields .form-control {
+      margin: 0 0 20px 0;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      border-color: #dabe0d; }
+    .container-custom#input-fields h2 {
+      font: bold 32px "Lucida Console", Monospace;
+      color: #dabe0d;
+      margin: 20px 0 5px 0; }
+  .container-custom#portfolio-thumbnail-group {
     justify-content: space-around;
     align-content: space-between;
     flex-flow: row wrap;
@@ -51,3 +72,8 @@ body {
   border-radius: 50%;
   margin: 20px 10px 0 10px;
   align-self: flex-start; }
+
+.line-separator {
+  width: 100%;
+  height: 2px;
+  background-color: #d2d0d0; }

@@ -1,6 +1,6 @@
 
-$white: #ffffff;
-$strong-yellow: #ffe856;
+$bronze: #dabe0d; 
+$light-yellow: #ffe856;
 $big-dog-font: "Lucida Console",Monospace;
 
 html{
@@ -9,11 +9,11 @@ html{
 
 body {
     height: 100%;
-    background-color: $strong-yellow;
+    background-color: $light-yellow;
     margin: 0;
 }
 
-.container{
+.container-custom{
 
     display: flex;
 
@@ -33,7 +33,7 @@ body {
 
 	h1{
 	    font: bold 128px $big-dog-font;
-	    color: $strong-yellow;
+	    color: $light-yellow;
 	    margin: 20px 0 0 0;
 
 	}
@@ -54,12 +54,46 @@ body {
 
 	h1{
 	    font:bold 64px $big-dog-font;
-	    color: #dabe0d;
+	    color: $bronze;
 	    margin: 40px 0 20px 0;
 	}
 
     }
 
+    &#contact-me{
+	flex-flow: column nowrap;
+	align-content: center;
+	padding: 0px 20px 0 20px;
+	
+	h1{
+	    text-align:center;
+	    font:bold 64px $big-dog-font;
+	    color: $bronze;
+	     margin: 40px 0 20px 0;
+	}
+    }
+
+
+    &#input-fields {
+
+	flex-flow: row wrap;
+	padding: 0px 40px 0 40px;
+	
+	.form-control{
+	    margin: 0 0 20px 0;
+	    border-width: 0 0 2px 0;
+	    border-style: solid;
+	    border-color: $bronze;
+	}
+
+	h2{
+	    font:bold 32px $big-dog-font;
+	    color: $bronze;
+	    margin: 20px 0 5px 0;
+	}
+    }
+    
+    
     &#portfolio-thumbnail-group{
 	justify-content: space-around;
 	align-content: space-between;
@@ -83,4 +117,11 @@ body {
     border-radius: 50%;
     margin: 20px 10px 0 10px;
     align-self: flex-start;
+}
+
+.line-separator {
+
+    width: 100%;
+    height: 2px;
+    background-color: #d2d0d0;
 }

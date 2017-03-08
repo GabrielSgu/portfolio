@@ -9,13 +9,13 @@ gulp.task('default',function() {
 
 gulp.task('sass',function() {
 
-    return gulp.src('./css/main.scss').pipe(sass()).pipe(gulp.dest('./css'))
+    return gulp.src('./css/**/*.scss').pipe(sass()).pipe(gulp.dest('./css'))
     
     
 });
 
 
 gulp.task('watch', function(){
-  gulp.watch('./css/main.scss', ['sass']); 
+  gulp.watch('./css/**/*.scss', ['sass']); 
   
 });
