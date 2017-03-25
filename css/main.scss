@@ -76,7 +76,7 @@ body {
 
     &#input-fields {
 
-	flex-flow: row wrap;
+	flex-flow: row  wrap;
 	padding: 0px 40px 0 40px;
 	
 	.form-control{
@@ -100,10 +100,34 @@ body {
 	flex-flow: row wrap;
 	padding: 20px;
     }
+
+    &#footer{
+	flex-flow: row;
+	justify-content: space-between;
+	background-color:black;
+	height: 100px;
+	padding: 25px;
+    }
+    
+    &#social-media{
+	width: 165px;
+	flex-flow: row;
+	align-self: flex-end;
+	justify-content: space-between;
+    }
+
 }
 
 
 //#GENERAL USE
+
+
+#send-button{
+    font:24px $big-dog-font;
+    border-radius: 0%;
+    background-color: $bronze;
+    margin-top: 20px;
+}
 
 .portfolio-thumbnail{
     height: 150px;
